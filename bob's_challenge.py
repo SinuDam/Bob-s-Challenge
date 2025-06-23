@@ -24,6 +24,8 @@ def nCk(n, k):
     return fact[n] * inv_fact[k] % MOD * inv_fact[n - k] % MOD
 
 # Process test cases
+import sys
+sys.stdin = open('input.txt', 'r')
 t = int(input())
 for _ in range(t):
     n, k = map(int, input().split())
